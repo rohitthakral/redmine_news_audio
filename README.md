@@ -80,6 +80,10 @@ This plugin works on any Redmine entity that uses the standard text editor, incl
 
 This plugin is released under the [MIT License](LICENSE).
 
+## Author
+
+Developed and maintained by **[Target Integration](https://www.targetintegration.com)** — info@targetintegration.com
+
 ## Contributing
 
 Pull requests and bug reports are welcome. Please open an issue on GitHub before submitting a large change.

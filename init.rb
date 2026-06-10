@@ -3,11 +3,12 @@ require_relative 'lib/redmine_news_audio'
 
 Redmine::Plugin.register :redmine_news_audio do
   name        'Redmine News Audio'
-  author      'Rohit Thakral'
+  author      'Target Integration'
+  author_url  'https://www.targetintegration.com'
   description 'Adds an audio recording button to the text editor; speech is transcribed and inserted into the description field.'
   version     '1.0.0'
   url         'https://github.com/rohitthakral/redmine_news_audio'
-  author_url  'https://github.com/rohitthakral'
+  # contact: info@targetintegration.com
 
   settings default: {
     'api_key'      => '',
