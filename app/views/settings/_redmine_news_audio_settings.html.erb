@@ -1,0 +1,41 @@
+<div class="redmine-news-audio-settings">
+  <p>
+    <label for="settings_api_key"><%= l(:label_rna_api_key) %></label><br />
+    <%= password_field_tag 'settings[api_key]',
+          @settings['api_key'],
+          id: 'settings_api_key',
+          size: 60,
+          autocomplete: 'off' %>
+    <em class="info"><%= l(:text_rna_api_key_hint) %></em>
+  </p>
+
+  <p>
+    <label for="settings_api_endpoint"><%= l(:label_rna_api_endpoint) %></label><br />
+    <%= text_field_tag 'settings[api_endpoint]',
+          @settings['api_endpoint'],
+          id: 'settings_api_endpoint',
+          size: 80,
+          placeholder: 'https://api.openai.com/v1/audio/transcriptions' %>
+    <em class="info"><%= l(:text_rna_api_endpoint_hint) %></em>
+  </p>
+
+  <p>
+    <label for="settings_model"><%= l(:label_rna_model) %></label><br />
+    <%= text_field_tag 'settings[model]',
+          @settings['model'],
+          id: 'settings_model',
+          size: 30,
+          placeholder: 'whisper-1' %>
+    <em class="info"><%= l(:text_rna_model_hint) %></em>
+  </p>
+
+  <p>
+    <label for="settings_language"><%= l(:label_rna_language) %></label><br />
+    <%= text_field_tag 'settings[language]',
+          @settings['language'],
+          id: 'settings_language',
+          size: 10,
+          placeholder: 'en' %>
+    <em class="info"><%= l(:text_rna_language_hint) %></em>
+  </p>
+</div>
